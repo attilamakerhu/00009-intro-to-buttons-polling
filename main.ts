@@ -1,7 +1,7 @@
-input.onButtonPressed(Button.A, function () {
-    item += 150
+basic.forever(function () {
+    if (input.buttonIsPressed(Button.A)) {
+        basic.showString("A")
+    } else {
+        basic.showIcon(IconNames.Happy)
+    }
 })
-input.onButtonPressed(Button.B, function () {
-    item += -150
-})
-let item = 0
